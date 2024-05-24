@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Semana Blog (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de prueba técnica para Revista Semana, a continuación algunos datos importantes a tener en cuenta:
 
-Currently, two official plugins are available:
+- Realizado con React + Typescript, TailwindCSS y axios para realizar consumo del API.
+- No se usaron librerías de componentes para la interfaz de usuario, todo fue realizado desde cero.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instrucciones de instalación local:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clonar el repositorio.
+2. Instala las dependencias en la raiz del proyecto:
+  ```sh
+   npm install
+   ```
+3. Pegar el archivo `.env` adjunto en el correo en la raiz del proyecto.
+4. Inicia el proyecto localmente con el siguiente comando:
+    ```sh
+   npm run dev
+   ```
+5. Abre tu localhost con `ctrl+click o command+click` y listo 🚀!
