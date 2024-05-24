@@ -25,6 +25,7 @@ export const BentoGridItem = ({
   owner,
   header,
   tags,
+  onClick,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -34,6 +35,7 @@ export const BentoGridItem = ({
   };
   header?: string;
   tags?: string[];
+  onClick?: () => void;
 }) => {
   return (
     <div
@@ -41,6 +43,7 @@ export const BentoGridItem = ({
         'row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4',
         className
       )}
+      onClick={onClick}
     >
       {header && <img src={header} className='h-72 w-full object-cover' />}
       <div className='transition duration-200'>
